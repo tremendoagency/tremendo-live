@@ -1,0 +1,211 @@
+.tl-viewer .tl-container {
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.tl-viewer .wrapper{
+  width: 100%;
+}
+.tl-viewer .tl-slide {
+  background-position: center;
+  background-size: cover;
+  width: 280px;
+  height: 367px;
+  background-color: #fff;
+}
+.tl-viewer .video, .tl-viewer .chat{
+  position: relative;
+}
+.tl-viewer .video {
+  width: 100%;
+  height: 100%;
+}
+.tl-viewer .video iframe, .tl-viewer .chat iframe{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.tl-viewer .tl-pagination-bullet-active{
+  background: #000;
+}
+.tl-viewer .dancefloor-btn{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-image:url(../img/dancefloor.png.jpg);
+}
+
+#footer{
+  width: 100%;
+  height: 85px;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+}
+
+/* NIGHTSHIFT */
+
+.custom-control{
+  cursor: pointer;
+}
+.custom-switch{
+  padding: 0 1rem;
+}
+
+.custom-control label{
+  font-family: 'GT-America-Expanded-Black', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+}
+.custom-control-label::after{
+  background-color: #f5b236 !important;
+  border: #adb5bd solid 1px !important;
+}
+.custom-control-input:checked~.custom-control-label::after{
+  background-color: #6e106a !important;
+  border: #fff solid 1px !important;
+}
+.custom-control-input:checked~.custom-control-label::before{
+  background-color: #000;
+  border: #fff solid 1px !important;
+}
+
+body.night{
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  transition: all 1s ease;
+}
+body.night .noshift{
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  transition: all 1s ease;
+}
+
+/* Media Queries */
+
+@media (min-width: 576px) {
+  h1{
+    font-size: 2.25rem;
+  }
+  h4{
+    font-size: 1.5rem;
+  }
+  #home .shape img{
+    width: 50%;
+    margin-top: -35px;
+  }
+  
+  .tl-viewer .tl-slide {
+    width: 540px;
+    height: 304px;
+  }
+  .tl-viewer .video {
+    width: 74%;
+    height: 100%;
+  }
+  .tl-viewer .chat {
+    width: 26%;
+    height: 100%;
+  }
+}
+@media (min-width: 767px) {
+  .iawol{
+    width: 220px;
+    height: 220px;
+  }
+  #home .container, #guide{
+    background-attachment: fixed;
+  }
+  #home .date{
+    top: 80%;
+  }
+  #home .shape img{
+    width: 100%;
+    margin-top: -35px;
+  }
+  p{
+    font-size: 0.75rem;
+  }
+  h1{
+    font-size: 2.25rem;
+  }
+  h4{
+    font-size: 1.5rem;
+  }
+  .tl-viewer .tl-slide {
+    width: 647px;
+    height: 270px;
+  }
+}
+@media (min-width: 992px) {
+  #mainNav .navbar-brand img{
+    opacity: 0;
+  }
+  nav{
+    height: 12.5%;
+  }
+  .container, #home .container{
+    width: 100%;
+  }
+  h1{
+    font-size: 2.25rem;
+  }
+  h4{
+    font-size: 1.5rem;
+  }
+  #home .shape img{
+    width: 50%;
+  }
+  .tl-viewer .tl-slide {
+    width: 837px;
+    height: 349px;
+  }
+}
+@media (min-width: 1200px) {
+  .iawol{
+    top: -10%;
+    left: 5%;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  h4{
+    font-size: 1.5rem;
+  }
+  #home .date{
+    top: 60%;
+  }
+  #home .shape{
+    left: -5%;
+  }
+  #share .shape img{
+    width: 80%;
+  }
+  .tl-viewer .tl-slide {
+    width: 992px;
+    height: 414px;
+  }
+}
+@media (min-width: 1440px) {
+  h1{
+    font-size: 2.25rem;
+  }
+  h4{
+    font-size: 1.5rem;
+  }
+  .tl-viewer .tl-slide {
+    width: 1140px;
+    height: 475px;
+  }
+}
+.tl-button-next{
+  color: #000;
+  right: 5%;
+}
+.tl-button-prev{
+  color: #000;
+  left: 5%;
+}

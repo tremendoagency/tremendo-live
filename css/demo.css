@@ -1,0 +1,124 @@
+/* DEMO */
+
+#loader{
+  width:100%;
+  height:100%;  
+  position:absolute;
+  z-index:1040;
+  overflow: hidden;
+  transition: all 1s ease 0.5s;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-image:url(../img/gradient02.jpg);
+}
+#loader .loader-wrapper{
+  height: 200%;
+  top: 0;
+  transition: all 1s ease 0.5s;
+}
+#loader .loader-inner, #loader .loader-welcome{
+  height: 50%;
+  transition: all 1s ease 0.5s;
+}
+#live{
+
+}
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  transition: all 1200ms ease-in-out !important;
+}
+#live .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+#live .swiper-wrapper{
+  width: 100%;
+  height: auto !important;
+  transition: all 1000ms ease-in-out !important;
+}
+#live .slide-content {
+  background-position: center;
+  background-size: cover;
+  width: 280px;
+  height: 367px;
+  background-color: #fff;
+}
+#live .video, #live .chat{
+  position: relative;
+}
+#live .video {
+  width: 100%;
+  height: 100%;
+}
+#live .video iframe, #live .chat iframe{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#live .swiper-pagination-bullet-active{
+  background: #000;
+}
+#live .dancefloor-btn{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-image:url(../img/dancefloor.png.jpg);
+}
+
+#footer{
+  width: 100%;
+  height: 85px;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+}
+
+/* NIGHTSHIFT */
+
+.custom-control{
+  cursor: pointer;
+}
+.custom-switch{
+  padding: 0 1rem;
+}
+
+.custom-control label{
+  font-family: 'GT-America-Expanded-Black', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+}
+.custom-control-label::after{
+  background-color: #f5b236 !important;
+  border: #adb5bd solid 1px !important;
+}
+.custom-control-input:checked~.custom-control-label::after{
+  background-color: #6e106a !important;
+  border: #fff solid 1px !important;
+}
+.custom-control-input:checked~.custom-control-label::before{
+  background-color: #000;
+  border: #fff solid 1px !important;
+}
+
+body.night{
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  transition: all 1s ease;
+}
+body.night .noshift{
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  transition: all 1s ease;
+}
