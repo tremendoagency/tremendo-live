@@ -1,5 +1,50 @@
 /* DEMO */
 
+@font-face {
+	font-family: 'GT-America-Expanded-Light';
+	src: url('../fonts/GT-America-Expanded-Light.eot');
+	src: local('☺'), url('../fonts/GT-America-Expanded-Light.woff') format('woff'), url('../fonts/GT-America-Expanded-Light.ttf') format('truetype'), url('../fonts/GT-America-Expanded-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GT-America-Expanded-Bold';
+	src: url('../fonts/GT-America-Expanded-Bold.eot');
+	src: local('☺'), url('../fonts/GT-America-Expanded-Bold.woff') format('woff'), url('../fonts/GT-America-Expanded-Bold.ttf') format('truetype'), url('../fonts/GT-America-Expanded-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.mobile-navbar {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1020;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease 0.3s;
+}
+.mobile-navbar.show{
+  opacity: 1;
+  pointer-events: auto;
+}
+.mobile-navbar a{
+  font-size: 1.5rem;
+}
+.mobile-navbar a:hover, .mobile-navbar a.active{
+  color: #f5b236;
+}
+
+.mobile-navbar .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
 #loader{
   width:100%;
   height:100%;  
@@ -23,7 +68,7 @@
   transition: all 1s ease 0.5s;
 }
 #live{
-
+  background-color: #fff;
 }
 .parallax-bg {
   position: absolute;
